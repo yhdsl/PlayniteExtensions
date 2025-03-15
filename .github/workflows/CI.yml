@@ -144,4 +144,4 @@ jobs:
         with:
           name: CustomSteamCovers
           path: |
-            .\source\bin\*
+            .\source\PlayniteCustomSteamCovers\bin\*
