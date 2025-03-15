@@ -3,3 +3,4 @@
 @TARGET=./FriendlySetPlugin.cs
 
 "Set Playtime"="设置游玩时间"
+"Set Time"="设置游玩时间"
