@@ -31,11 +31,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Change the console encoder
-        run: chcp 65001 | set PYTHONIOENCODING=utf-8
-
       - name: Run translator tool
-        run: python .\tool\translator.py .\translate\rules\virtual-library -r "$(pwd)\source\plugins"
+        run: |
+          chcp 65001
+          set PYTHONIOENCODING=utf-8
+          python .\tool\translator.py .\translate\rules\virtual-library -r "$(pwd)\source\plugins"
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
@@ -45,8 +45,8 @@ jobs:
 
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
-           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\Plugins.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\Plugins.sln -p:Configuration=Release -restore -clp:ErrorsOnly
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
