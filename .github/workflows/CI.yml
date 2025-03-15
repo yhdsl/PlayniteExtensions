@@ -50,4 +50,4 @@ jobs:
         with:
           name: test
           path: |
-            .\source\out\*
+            .\source\*
