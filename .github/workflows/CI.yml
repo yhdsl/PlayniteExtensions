@@ -31,6 +31,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Change the console encoder
+        run: chcp 65001 | set PYTHONIOENCODING=utf-8
+
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\virtual-library -r "$(pwd)\source\plugins"
 
