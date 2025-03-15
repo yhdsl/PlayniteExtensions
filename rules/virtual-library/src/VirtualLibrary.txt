@@ -2,8 +2,8 @@
 @VERSION=1.0.0
 @TARGET=./virtual-library/src/VirtualLibrary.cs
 
-Patterns:=可用的匹配器:
-Enter source.=输入游戏页面地址。
+Patterns:=可用的匹配器如下:
+Enter source.=输入游戏页面链接。
 Add Virtual Game=添加虚拟游戏
-Add Virtual Game=添加虚拟游戏
-Add Virtual Game=添加虚拟游戏
+Add Virtual Game"=添加虚拟游戏"
+Add Virtual Game",=添加虚拟游戏",
