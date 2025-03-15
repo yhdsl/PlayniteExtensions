@@ -79,7 +79,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run translator tool
-        run: python .\tool\translator.py .\translate\rules\virtual-library -r "$(pwd)\source\FriendlySetTime"
+        run: python .\tool\translator.py .\translate\rules\FriendlySetTime -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
