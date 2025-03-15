@@ -1,0 +1,5 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./FriendlySetPlugin.cs
+
+"Set Playtime"="设置游玩时间"

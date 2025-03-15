@@ -1,0 +1,13 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./FriendlySetTime.SetTimeWindow.xaml
+
+"hours"/>="小时"/>
+"minutes"/>="分钟"/>
+"seconds"/>="秒"/>
+"Set status to:"="设置完成状态为:"
+"Set last played date to"="设置上次游玩日期为"
+"Today"="今天"
+"Other date:"="其它日期:"
+"Set"="设置"
+"Cancel"="取消"
