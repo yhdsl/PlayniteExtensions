@@ -32,10 +32,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run translator tool
-        run: |
-          chcp 65001
-          set PYTHONIOENCODING=utf-8
-          python .\tool\translator.py .\translate\rules\virtual-library -r "$(pwd)\source\plugins"
+        run: python .\tool\translator.py .\translate\rules\virtual-library -r "$(pwd)\source\plugins"
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
