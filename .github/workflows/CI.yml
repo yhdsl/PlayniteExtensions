@@ -43,7 +43,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\Plugins.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\Plugins.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
@@ -90,7 +90,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\FriendlySetTime.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\FriendlySetTime.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
@@ -137,7 +137,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\PlayniteCustomSteamCovers.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\PlayniteCustomSteamCovers.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
@@ -232,7 +232,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\PlayniteDolphinMetadata.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\PlayniteDolphinMetadata.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
@@ -301,7 +301,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.sln -p:Configuration=Release -restore
 
       - name : Upload artifact (GOGMetadata)
         uses: actions/upload-artifact@v4
@@ -369,7 +369,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\NintendoMetadata.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\NintendoMetadata.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
@@ -416,7 +416,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\BetterScan.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\BetterScan.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
@@ -463,7 +463,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\FreeGameNotifications.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\FreeGameNotifications.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
@@ -510,7 +510,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\JsonLibraryImportExport.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\JsonLibraryImportExport.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
         uses: actions/upload-artifact@v4
