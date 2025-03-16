@@ -1,0 +1,16 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./View/JsonLibraryExportView.xaml
+
+"Export"="导出"
+"Select databases to export:"="选择需要导出的数据:"
+"Games"="全部数据"
+"CompletionStatuses"="完成状态"
+"Genres"="流派"
+"Categories"="分类"
+"Features"="功能特色"
+"Platforms"="平台"
+"Regions"="地区"
+"Series"="系列"
+"Sources"="来源"
+"Tags"="标签"

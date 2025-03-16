@@ -1,0 +1,26 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./View/JsonLibraryImportView.xaml
+
+"Select databases to import:"="选择需要导入的数据:"
+"Games:"="全部数据:"
+Browse=打开
+"Genres:"="流派:"
+"Browse="打开
+"Categories:"="分类:"
+"Browse"="打开"
+"Features:"="功能特色:"
+"Browse" C="打开" C
+"Platforms:"="平台:"
+"Browse" Co="打开" Co
+"Regions:"="地区:"
+"Browse" Com="打开" Com
+"Series:"="系列:"
+"Browse" Comm="打开" Comm
+"Sources:"="来源:"
+"Browse" Comma="打开" Comma
+"Tags:"="标签:"
+"Browse" Comman="打开" Comman
+"CompletionStatuses:"="完成状态:"
+"Browse" Command="打开" Command
+"Import"="导入"

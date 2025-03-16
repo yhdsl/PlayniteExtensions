@@ -1,0 +1,6 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./JsonLibraryImportExport.cs
+
+"Open export window"="打开导出窗口"
+"Open import window"="打开导入窗口"
