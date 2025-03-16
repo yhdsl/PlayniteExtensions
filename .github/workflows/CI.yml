@@ -184,6 +184,7 @@ jobs:
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          echo "" > $Env:GITHUB_WORKSPACE\source\postbuild.bat
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\LaunchMate.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
