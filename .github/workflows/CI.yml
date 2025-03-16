@@ -272,6 +272,23 @@ jobs:
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
 
+      - name: Copy shared xaml for bulk import projects
+        run: |
+            $bulkImportProjects = @('GiantBombMetadata', 'MobyGamesMetadata', 'PCGamingWikiMetadata', 'SteamTagsImporter', 'TvTropesMetadata')
+            foreach ($proj in $bulkImportProjects){
+              xcopy "$Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.Metadata.Common\GamePropertyImportView.xaml*" "$Env:GITHUB_WORKSPACE\source\source\$proj\Common\Metadata" /Y /I
+            }
+
+      - name: Setup Playnite
+        run: |
+           Invoke-WebRequest -Uri "https://github.com/JosefNemec/Playnite/releases/download/10.35/Playnite1035.zip" -OutFile "$Env:GITHUB_WORKSPACE\Playnite.zip"
+           Expand-Archive "$Env:GITHUB_WORKSPACE\Playnite.zip" -DestinationPath "$Env:GITHUB_WORKSPACE\Playnite"
+
+      - name: Copy Playnite Emulation directory to ExtraEmulatorProfiles
+        run: |
+           xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\*.yaml" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original" /Y /I
+           xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\Emulators" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original\Emulators" /Y /I /E
+
       - name: Nuget Restore
         run: nuget restore .\source\source\PlayniteExtensions.sln
 
