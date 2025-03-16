@@ -1,0 +1,7 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./BulkImport/Views/SelectStringsView.xaml
+
+Select the values you want imported for=选择需要导入的值
+"OK"="确定"
+"Cancel"="取消"

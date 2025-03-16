@@ -1,0 +1,6 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./PCGamingWikiMetadata.cs
+
+Import PCGamingWiki property=导入 PCGamingWiki 属性
+"Import PCGamingWiki property="导入 PCGamingWiki 属性
