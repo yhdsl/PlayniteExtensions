@@ -1,0 +1,9 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./BetterScan.cs
+
+Scan Folder...=扫描文件夹...
+Verify Game Path=验证游戏路径
+"Found " + res.ndir + "games with invalid install dir. "="发现 " + res.ndir + " 个游戏的安装目录无效。 "
+" games with invalid ROM path. "=" 个游戏的ROM目录无效。 "
+" games with invalid action path. "=" 个游戏的指令目录无效。 "

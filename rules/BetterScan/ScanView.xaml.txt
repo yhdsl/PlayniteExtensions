@@ -1,0 +1,11 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./ScanView.xaml
+
+Select Folder=选择文件夹
+"Scan"="扫描"
+"Add Selected"="添加已选择的游戏"
+"Folder Path:"="文件夹路径:"
+"Scan Result"="扫描结果"
+"Icon"="图标"
+"File Path"="文件路径"

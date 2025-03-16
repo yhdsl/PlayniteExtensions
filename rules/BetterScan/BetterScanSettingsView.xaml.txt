@@ -1,0 +1,9 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./BetterScanSettingsView.xaml
+
+Match Pattern (comma separated)=匹配类型(使用英文逗号分割)
+Skip Pattern (comma separated)=忽略类型(使用英文逗号分割)
+Set game name to folder name, use file name when unchecked=将游戏名称设置为文件夹名称，取消勾选则使用文件名称
+Use relative install path=使用绝对安装目录
+Use .ico file in folder if target does not contain icon=如果目标不为图标文件，则使用文件夹中的 .ico 文件
