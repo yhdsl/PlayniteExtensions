@@ -4,4 +4,4 @@
 
 ❌ Path is empty=❌ 路径为空
 ✔️ Path is valid=✔️ 已设置为正确的路径
-❌ Path does not point to Steam user folder, or it doesn't have any covers❌=路径未指向 Steam 的用户文件夹，或者该路径下没有任何自定义的封面图片
+❌ Path does not point to Steam user folder, or it doesn't have any covers=❌路径未指向 Steam 的用户文件夹，或者该路径下没有任何自定义的封面图片
