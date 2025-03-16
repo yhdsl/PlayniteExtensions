@@ -422,7 +422,7 @@ jobs:
         with:
           name: BetterScan
           path: |
-            .\source\bin\*
+            .\source\BetterScan\bin\*
 
   FreeGameNotifications:
     runs-on: windows-latest
