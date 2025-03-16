@@ -12,3 +12,4 @@ Check all=全选
 Uncheck all=取消全选
 Only filtered games=仅过滤的游戏
 Only matching platforms=仅匹配的平台
+"Select games"="选择游戏"

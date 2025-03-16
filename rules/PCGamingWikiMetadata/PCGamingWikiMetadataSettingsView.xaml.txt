@@ -2,7 +2,7 @@
 @VERSION=1.0.0
 @TARGET=./PCGamingWikiMetadataSettingsView.xaml
 
-Bulk property import=属性批量导入
+Bulk property import=批量属性导入
 Parallelism:=并行数:
 Parallelism dictates how many simultaneous threads can be used to process the bulk property import game matching. It is recommended to set this lower than the amount of cores in your CPU.=并行数决定了可以同时使用多少个线程来批量处理属性导入。建议不高于CPU核心数。
 Show top panel button=在顶部面板显示按钮
