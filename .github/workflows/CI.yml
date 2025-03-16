@@ -267,7 +267,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run translator tool
-        run: python .\tool\translator.py .\translate\rules\DolphinMetadata -r "$(pwd)\source\source\GOGMetadata"
+        run: python .\tool\translator.py .\translate\rules\GOGMetadata -r "$(pwd)\source\source\GOGMetadata"
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
