@@ -1,0 +1,9 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./GamePropertyImportView.xaml
+
+Import as a=导入为
+named=并命名为
+Add the following links to checked games:=为选择的游戏添加以下链接:
+"OK"="确定"
+"Cancel"="取消"

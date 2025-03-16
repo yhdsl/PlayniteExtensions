@@ -1,0 +1,14 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./BulkGamePropertyAssigner.cs
+
+Downloading list of associated games=下载匹配的游戏列表
+Search for a property to assign to all your matching games=搜索要分配至所有匹配游戏的属性
+Could not find import settings for property=无法找到该属性的导入设置
+No matching games found in your library.=你的游戏库中不存在匹配的游戏
+{MetadataProviderName} game property assigner={MetadataProviderName} 游戏属性导入器
+Matching {gamesToMatch.Count} games…=匹配 {gamesToMatch.Count} 个游戏…
+Check all=全选
+Uncheck all=取消全选
+Only filtered games=仅过滤的游戏
+Only matching platforms=仅匹配的平台
