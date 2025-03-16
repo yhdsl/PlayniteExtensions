@@ -1,0 +1,21 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./SteamTagsImporterSettingsView.xaml
+
+"Settings"="设置"
+Tag language:=元数据语言:
+Limit the amount of tags imported to the first=将导入的标签数量限制为第一个
+Prefix tag names with:=标签名称前缀:
+Tag delisted games as:=将已下架的游戏标记为:
+Only add tags to PC games=仅为 PC 平台上的游戏添加标签
+Automatically add tags to new games*=自动为新游戏添加标签*
+Uncheck if you use this plugin as a default metadata source, or it will run twice per game=如果使用此附加组件作为默认的元数据源，请取消选中，否则将导致重复运行
+Show top panel property import button=在顶部面板中显示属性导入按钮
+Parallelism:=并行数:
+Parallelism dictates how many simultaneous threads can be used to process the bulk property import game matching. It is recommended to set this lower than the amount of cores in your CPU.=并行数决定了可以同时使用多少个线程来批量处理属性导入。建议不高于CPU核心数。
+"Tag blacklist"="标签黑名单"
+New tags will appear in the available tags. Excluded tags will not be added to games.=新标签将出现在可用标签中，已排除标签不会被添加到游戏。
+Available tags=可用标签
+Excluded tags=已排除标签
+Add to excluded tags=添加到已排除标签
+Remove from excluded tags=从已排除标签中移除

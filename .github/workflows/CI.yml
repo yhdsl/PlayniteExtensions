@@ -350,3 +350,67 @@ jobs:
           name: NintendoMetadata
           path: |
             .\source\bin\*
+
+  Steam_Tags_Importer:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout translate file
+        uses: actions/checkout@v4
+        with:
+          path: './translate'
+
+      - name: Checkout translator tool
+        uses: actions/checkout@v4
+        with:
+          repository: 'yhdsl/Translator-Tool'
+          path: './tool'
+
+      - name: Checkout Steam_Tags_Importer source code
+        uses: actions/checkout@v4
+        with:
+          repository: 'Jeshibu/PlayniteExtensions'
+          path: './source'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run translator tool
+        run: python .\tool\translator.py .\translate\rules\Steam_Tags_Importer -r "$(pwd)\source\source\SteamTagsImporter"
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Copy shared xaml for bulk import projects
+        run: |
+            $bulkImportProjects = @('GiantBombMetadata', 'MobyGamesMetadata', 'PCGamingWikiMetadata', 'SteamTagsImporter', 'TvTropesMetadata')
+            foreach ($proj in $bulkImportProjects){
+              xcopy "$Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.Metadata.Common\GamePropertyImportView.xaml*" "$Env:GITHUB_WORKSPACE\source\source\$proj\Common\Metadata" /Y /I
+            }
+
+      - name: Setup Playnite
+        run: |
+           Invoke-WebRequest -Uri "https://github.com/JosefNemec/Playnite/releases/download/10.35/Playnite1035.zip" -OutFile "$Env:GITHUB_WORKSPACE\Playnite.zip"
+           Expand-Archive "$Env:GITHUB_WORKSPACE\Playnite.zip" -DestinationPath "$Env:GITHUB_WORKSPACE\Playnite"
+
+      - name: Copy Playnite Emulation directory to ExtraEmulatorProfiles
+        run: |
+           xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\*.yaml" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original" /Y /I
+           xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\Emulators" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original\Emulators" /Y /I /E
+
+      - name: Nuget Restore
+        run: nuget restore .\source\source\PlayniteExtensions.sln
+
+      - name: Build entire solution (with .NET Framework 4.6.2)
+        run: |
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+
+      - name : Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Steam_Tags_Importer
+          path: |
+            .\source\source\SteamTagsImporter\bin\*
