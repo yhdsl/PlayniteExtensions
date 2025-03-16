@@ -9,5 +9,7 @@
 - [FriendlySetTime - V0.4](https://github.com/erys/FriendlySetTimePlaynitePlugin)
 - [GOGMetadata - V0.2.1](https://github.com/Jeshibu/PlayniteExtensions)
 - [NintendoMetadata - V0.3.1](https://github.com/minhnhattonthat/playnite-nintendo-metadata-plugin)
+- [PCGamingWikiMetadata - V1.4.4](https://github.com/Jeshibu/PlayniteExtensions)
 - [Steam_Tags_Importer - V4.2.5](https://github.com/Jeshibu/PlayniteExtensions)
 - [virtual-library - V0.01](https://github.com/iSplasher/PlayniteExtensions)
+- [XboxMetadata - V0.3.3](https://github.com/Jeshibu/PlayniteExtensions)
