@@ -4,4 +4,4 @@
 
 Path to Steam user folder:=Steam 用户文件夹路径:
 Browse=打开
-This path should point to (steam directory)\userdata\(your id)=该路径应当指向 (steam 根目录)\userdata\(你的用户ID)
+This path should point to (steam directory)\userdata\(your id)=该路径应当指向 "(steam 根目录)\userdata\(你的用户ID)"
