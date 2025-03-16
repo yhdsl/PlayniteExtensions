@@ -1,0 +1,27 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./XboxMetadataSettingsView.xaml
+
+"Settings"="设置"
+Fill the below field with the xx-xx format part of the Xbox store page URL for your locale.=使用您所在地区的 Xbox 商店页面 URL 的 xx-xx 格式部分填写下面的字段。
+For example: https://www.xbox.com/<Bold>en-us</Bold>/games/store/asdf/9pp8q82h79lc=例如: https://www.xbox.com/<Bold>en-us</Bold>/games/store/asdf/9pp8q82h79lc
+This will dictate the language of the metadata this plugin fetches, but also what games are available.=这将决定该插件获取的元数据语言，以及该地区可用的游戏。
+Market:=商店语言代码:
+Import accessibility features as features=将辅助功能导入为功能特色
+"Covers"="封面图"
+Images smaller than either of the minimum dimensions will be ignored.=小于任何一个最小尺寸的图像将会被忽略。
+Images larger than either of the maximum dimensions will be scaled down.=大于任何一个最大尺寸的图像将会被缩小。
+Minimum dimensions:=最小尺寸:
+Maximum dimensions:=最大尺寸:
+Orientation:=图片方向:
+Use the following image types for covers, in the specified order (drag and drop to reorder):=按以下封面类型的排列顺序选取封面 (拖放即可改变顺序):
+Drag me!=拖动我!
+"Backgrounds"="背景图"
+Images smaller than either of the minimum dimensions will be ignored.<=小于任何一个最小尺寸的图像将会被忽略。<
+Images larger than either of the maximum dimensions will be scaled down=大于任何一个最大尺寸的图像将会被缩小
+大于任何一个最大尺寸的图像将会被缩小.=大于任何一个最大尺寸的图像将会被缩小。
+Minimum dimensions:<=最小尺寸:<
+Maximum dimensions:<=最大尺寸:<
+Orientation:<=图片方向:<
+Use the following image types for backgrounds, in the specified order (drag and drop to reorder):<=按以下封面类型的排列顺序选取封面 (拖放即可改变顺序):<
+"Drag me!"="拖动我!"

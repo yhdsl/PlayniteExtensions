@@ -272,6 +272,7 @@ jobs:
           python .\tool\translator.py .\translate\rules\GOGMetadata -r "$(pwd)\source\source\GOGMetadata"
           python .\tool\translator.py .\translate\rules\Steam_Tags_Importer -r "$(pwd)\source\source\SteamTagsImporter"
           python .\tool\translator.py .\translate\rules\PCGamingWikiMetadata -r "$(pwd)\source\source\PCGamingWikiMetadata"
+          python .\tool\translator.py .\translate\rules\XboxMetadata -r "$(pwd)\source\source\XboxMetadata"
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
@@ -321,6 +322,13 @@ jobs:
           name: PCGamingWikiMetadata
           path: |
             .\source\source\PCGamingWikiMetadata\bin\*
+
+      - name : Upload artifact (XboxMetadata)
+        uses: actions/upload-artifact@v4
+        with:
+          name: XboxMetadata
+          path: |
+            .\source\source\XboxMetadata\bin\*
 
   NintendoMetadata:
     runs-on: windows-latest
