@@ -1,0 +1,15 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./Views/SettingsView.xaml
+
+Launch Groups=启动组
+"Add"="添加"
+"Remove"="移除"
+Group Name:=启动组名称:
+Action Type:=操作类型:
+Use Playnite's built-in web view for launched web pages=使用 Playnite 内置的浏览器打开网页
+Action Delay:=操作延迟:
+Launch Conditions=启动条件
+"Exclude"="排除"
+No Launch Groups=无可用的启动组
+Click on &quot;Add&quot; in the bottom left to create your first Launch Group=点击左下角的 &quot;添加&quot; 按钮设置你的第一个启动组

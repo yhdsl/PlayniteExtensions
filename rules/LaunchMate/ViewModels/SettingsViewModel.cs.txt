@@ -1,0 +1,14 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./ViewModels/SettingsViewModel.cs
+
+Install Directory=安装目录
+Executable Running=正在运行的程序
+Process Running=正在运行的进程
+Service Running=正在运行的服务
+Launch an App=启动应用程序
+Open a Webpage=打开网页
+Run a Script=运行脚本
+Start a Service=启动服务
+Stop a Process=停止进程
+Stop a Service=停止服务
