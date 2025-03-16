@@ -1,0 +1,5 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./EpicGamesWebApi.cs
+
+Free on the Epic Game Store=Epic 商店中的免费游戏

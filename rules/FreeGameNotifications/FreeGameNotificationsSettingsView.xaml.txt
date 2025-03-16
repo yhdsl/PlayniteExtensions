@@ -1,0 +1,12 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./FreeGameNotificationsSettingsView.xaml
+
+Show notifications for games already collected:=显示已拥有的游戏的通知
+Check this if you'd like to see notifications for games you already have=如果你想查看包含已拥有的游戏的通知，请勾选此项
+"Check this if you'd like to see notifications for games you already have"="如果你想查看包含已拥有的游戏的通知，请勾选此项"
+Check Interval (in hours ; minimum value: 1, maximum value: 24)=检查间隔 (单位为小时，最小为 1，最大为 24)
+Save shown notifications in a local history and do not show them again:=将已显示的通知保存在本地历史记录中，并不再显示
+Check this if you'd like to not see notifications you've already seen=如果你不想看到已经显示过的通知，请勾选此项
+"Check this if you'd like to not see notifications you've already seen"="如果你不想看到已经显示过的通知，请勾选此项"
+Local History (read-only, copiable):=本地历史记录 (只读，可复制):

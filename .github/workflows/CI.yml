@@ -423,3 +423,50 @@ jobs:
           name: BetterScan
           path: |
             .\source\bin\*
+
+  FreeGameNotifications:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout translate file
+        uses: actions/checkout@v4
+        with:
+          path: './translate'
+
+      - name: Checkout translator tool
+        uses: actions/checkout@v4
+        with:
+          repository: 'yhdsl/Translator-Tool'
+          path: './tool'
+
+      - name: Checkout FreeGameNotifications source code
+        uses: actions/checkout@v4
+        with:
+          repository: 'epidemicz/FreeGameNotifications'
+          path: './source'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run translator tool
+        run: python .\tool\translator.py .\translate\rules\FreeGameNotifications -r "$(pwd)\source\source"
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Nuget Restore
+        run: nuget restore .\source\source\FreeGameNotifications.sln
+
+      - name: Build entire solution (with .NET Framework 4.6.2)
+        run: |
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\FreeGameNotifications.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+
+      - name : Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FreeGameNotifications
+          path: |
+            .\source\source\bin\*
