@@ -1,0 +1,6 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./GOGMetadataSettingsView.xaml
+
+Use vertical covers=使用纵向封面
+Language=元数据语言

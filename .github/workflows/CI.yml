@@ -239,3 +239,50 @@ jobs:
           name: DolphinMetadata
           path: |
             .\source\PlayniteDolphinMetadata\bin\*
+
+  GOGMetadata:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout translate file
+        uses: actions/checkout@v4
+        with:
+          path: './translate'
+
+      - name: Checkout translator tool
+        uses: actions/checkout@v4
+        with:
+          repository: 'yhdsl/Translator-Tool'
+          path: './tool'
+
+      - name: Checkout GOGMetadata source code
+        uses: actions/checkout@v4
+        with:
+          repository: 'Jeshibu/PlayniteExtensions'
+          path: './source'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run translator tool
+        run: python .\tool\translator.py .\translate\rules\DolphinMetadata -r "$(pwd)\source\source\GOGMetadata"
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Nuget Restore
+        run: nuget restore .\source\source\PlayniteExtensions.sln
+
+      - name: Build entire solution (with .NET Framework 4.6.2)
+        run: |
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.sln -p:Configuration=Release -restore -clp:ErrorsOnly
+
+      - name : Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DolphinMetadata
+          path: |
+            .\source\source\GOGMetadata\bin\*
