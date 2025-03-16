@@ -1,0 +1,6 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./GOGMetadataSettingsView.xaml
+
+Default Nintendo Store Region=任天堂商店地区
+Prefer Playnite game region=首选当前 Playnite 设置的地区
