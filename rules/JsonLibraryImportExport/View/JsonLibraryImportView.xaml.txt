@@ -21,6 +21,6 @@ Browse=打开
 "Browse" Comma="打开" Comma
 "Tags:"="标签:"
 "Browse" Comman="打开" Comman
-"CompletionStatuses:"="完成状态:"
+"Completion Statuses:"="完成状态:"
 "Browse" Command="打开" Command
 "Import"="导入"
