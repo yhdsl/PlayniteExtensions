@@ -5,5 +5,8 @@
 ### 插件清单
 
 - [CustomSteamCovers - V3.0](https://github.com/uwx/PlayniteCustomSteamCovers)
+- [DolphinMetadata (GameTDB) - V3.1](https://github.com/uwx/PlayniteDolphinMetadata)
 - [FriendlySetTime - V0.4](https://github.com/erys/FriendlySetTimePlaynitePlugin)
+- [GOGMetadata - V0.2.1](https://github.com/Jeshibu/PlayniteExtensions)
+- [NintendoMetadata - V0.3.1](https://github.com/minhnhattonthat/playnite-nintendo-metadata-plugin)
 - [virtual-library - V0.01](https://github.com/iSplasher/PlayniteExtensions)
