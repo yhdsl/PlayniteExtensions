@@ -2,11 +2,11 @@
 @VERSION=1.0.0
 @TARGET=./Views/SettingsView.xaml.cs
 
-App Path:=应用程序路径:
-App Parameters:=额外的参数:
-Web URL:=网页地址:
-Script:=脚本路径:
-Script Arguments:=额外的参数:
-Process Name:=进程名称:
+"App Path:="应用程序路径:
+"App Parameters:="额外的参数:
+"Web URL:="网页地址:
+"Script:="脚本路径:
+"Script Arguments:="额外的参数:
+"Process Name:="进程名称:
 Service Name:=服务名称:
 "Service Name:="服务名称:
