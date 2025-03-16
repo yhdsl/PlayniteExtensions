@@ -3,3 +3,5 @@
 @TARGET=./SteamTagsImporter.cs
 
 Import Steam tags=导入 Steam 标签
+Import Steam game property=导入 Steam 游戏属性
+"Import Steam game property="导入 Steam 游戏属性
