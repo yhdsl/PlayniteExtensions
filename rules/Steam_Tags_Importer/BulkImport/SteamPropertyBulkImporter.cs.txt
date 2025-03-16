@@ -1,0 +1,11 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./BulkImport/SteamPropertyBulkImporter.cs
+
+"Discussions"="讨论"
+"Guides"="指南"
+"Achievements"="成就"
+"Badge Progress"="徽章进度"
+"Points Shop"="点数商店"
+"Workshop"="创意工坊"
+"Only Steam games"="仅 Steam 游戏"
