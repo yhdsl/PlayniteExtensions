@@ -1,0 +1,10 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./PlayniteDolphinMetadata/DolphinMetadataSettings.cs
+
+Regular Cover (Small)=普通封面 (小)
+3D Cover (Small)=3D封面 (小)
+Disc Label=光盘标签面
+HQ Boxart=包装盒高清图片
+HQ Boxart, cropped to cover only=包装盒高清图片 (仅封面部分)
+Full Boxart=完整包装盒图片
