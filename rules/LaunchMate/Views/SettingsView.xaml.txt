@@ -2,7 +2,7 @@
 @VERSION=1.0.0
 @TARGET=./Views/SettingsView.xaml
 
-Launch Groups=启动组
+"Launch Groups"="启动组"
 "Add"="添加"
 "Remove"="移除"
 Group Name:=启动组名称:
