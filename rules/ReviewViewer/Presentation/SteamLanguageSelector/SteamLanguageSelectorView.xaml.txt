@@ -1,6 +1,6 @@
 @AUTHOR=YHDSL
 @VERSION=1.0.0
-@TARGET=./Presentation/SteamLanguageSelector/SteamLanguageSelectorView.xaml
+@TARGET=./source/Generic/ReviewViewer/Presentation/SteamLanguageSelector/SteamLanguageSelectorView.xaml
 
 "Save"="保存"
 "Cancel"="取消"
