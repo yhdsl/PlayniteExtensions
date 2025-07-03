@@ -2,4 +2,6 @@
 @VERSION=1.0.0
 @TARGET=./source/Generic/ReviewViewer/Presentation/ReviewsControl.xaml.cs
 
+"This reviewer played this game primarily on Steam Deck at the time of writing ({0} hours)"="评测者撰写评测时主要是在 Steam Deck 上玩此游戏（{0} 个小时）"
+"dd MMM yyyy"="yyyy MMM dd"
 "Steam Languages Selector"="语言偏好"
