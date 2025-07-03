@@ -1,0 +1,6 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./source/Generic/SteamWishlistDiscountNotifier/Presentation/SteamWishlistViewerView.xaml
+
+"Sort By:"="排序依据:"
+"Order:"="排序顺序:"
