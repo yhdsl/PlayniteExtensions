@@ -39,5 +39,7 @@
 "No reviews found matching the selected filters."="正在显示与上方筛选条件匹配的 0 篇评测"
 "This review is counted in the overall review score because this user purchased the game directly on Steam or got a free license of a free game"="此评测会计入总评测分数，因为该用户直接在 Steam 上购买了游戏或是获得了免费游戏的免费许可。"
 "This review is not counted in the overall review score because this user activated the product via a Steam key, received as a gift, or via a temporary free license"="此评测不会计入总评测分数，因为该用户是通过 Steam 序列号激活了该产品，或是作为礼物/通过临时免费许可获得了该产品的。"
+"Product received for free"="免费获取的产品"
+"This reviewer received the game for free."="该评测人是免费获取此游戏的。"
 "This review was written while the game was marked as Steam Early Access"="该评测被撰写时，此游戏被标记为 Steam 抢先体验游戏"
 "Early Access Review"="抢先体验版本评测"
