@@ -295,13 +295,16 @@ jobs:
            xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\*.yaml" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original" /Y /I
            xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\Emulators" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original\Emulators" /Y /I /E
 
+      - name: Rename SLNX
+        run: COPY .\source\source\PlayniteExtensions.slnx .\source\source\PlayniteExtensions.sln
+
       - name: Nuget Restore
-        run: nuget restore .\source\source\PlayniteExtensions.slnx
+        run: nuget restore .\source\source\PlayniteExtensions.sln
 
       - name: Build entire solution (with .NET Framework 4.6.2)
         run: |
           cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
-          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.slnx -p:Configuration=Release -restore
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.sln -p:Configuration=Release -restore
 
       - name : Upload artifact (GOGMetadata)
         uses: actions/upload-artifact@v4
