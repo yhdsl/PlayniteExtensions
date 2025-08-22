@@ -295,8 +295,9 @@ jobs:
            xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\*.yaml" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original" /Y /I
            xcopy "$Env:GITHUB_WORKSPACE\Playnite\Emulation\Emulators" "$Env:GITHUB_WORKSPACE\source\source\ExtraEmulatorProfiles\EmulationFiles\Original\Emulators" /Y /I /E
 
-      - name: Rename SLNX
-        run: COPY .\source\source\PlayniteExtensions.slnx .\source\source\PlayniteExtensions.sln
+      - name: Move .sln
+        run: |
+          MV '.\translate\extra\JeshibuPlayniteExtensions\PlayniteExtensions.sln' '.\source\source'
 
       - name: Nuget Restore
         run: nuget restore .\source\source\PlayniteExtensions.sln
