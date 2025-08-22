@@ -9,7 +9,7 @@
 - [DolphinMetadata (GameTDB) - V3.1](https://github.com/uwx/PlayniteDolphinMetadata)
 - [FreeGameNotifications - V1.1.2](https://github.com/epidemicz/FreeGameNotifications)
 - [FriendlySetTime - V0.4](https://github.com/erys/FriendlySetTimePlaynitePlugin)
-- [GOGMetadata - V0.2.1](https://github.com/Jeshibu/PlayniteExtensions)
+- [GOGMetadata - V0.2.2](https://github.com/Jeshibu/PlayniteExtensions)
 - [JsonLibraryImportExport - V1.0.0](https://github.com/sokolinthesky/JsonLibraryImportExport)
 - [LaunchMate - V2.0.1](https://github.com/ASchoe311/LaunchMate)
 - [NintendoMetadata - V0.3.1](https://github.com/minhnhattonthat/playnite-nintendo-metadata-plugin)
