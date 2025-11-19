@@ -312,7 +312,7 @@ jobs:
         with:
           name: JeshibuPlayniteExtensions
           path: |
-            .\source\source\*
+            .\source\*
 
       - name : Upload artifact (GOGMetadata)
         uses: actions/upload-artifact@v4
