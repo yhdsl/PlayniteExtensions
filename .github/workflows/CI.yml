@@ -629,3 +629,52 @@ jobs:
           name: SteamWishlistDiscountNotifier
           path: |
             .\source\source\Generic\SteamWishlistDiscountNotifier\bin\Release\*
+
+  CoverCollageMaker:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout translate file
+        uses: actions/checkout@v4
+        with:
+          path: './translate'
+
+      - name: Checkout translator tool
+        uses: actions/checkout@v4
+        with:
+          repository: 'yhdsl/Translator-Tool'
+          path: './tool'
+
+      - name: Checkout SteamWishlistDiscountNotifier source code
+        uses: actions/checkout@v4
+        with:
+          repository: 'darklinkpower/PlayniteExtensionsCollection'
+          path: './source'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run translator tool
+        run: python .\tool\translator.py .\translate\rules\CoverCollageMaker -r "$(pwd)\source"
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Nuget Restore
+        run: |
+          nuget restore .\source\source\PlayniteExtensions.sln
+          nuget restore .\source\source\Generic\CoverCollageMaker\CoverCollageMaker.sln
+
+      - name: Build entire solution (with .NET Framework 4.6.2)
+        run: |
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\Generic\CoverCollageMaker\CoverCollageMaker.sln -p:Configuration=Release -restore
+
+      - name : Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CoverCollageMaker
+          path: |
+            .\source\source\Generic\CoverCollageMaker\bin\Release\*

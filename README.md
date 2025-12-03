@@ -5,6 +5,7 @@
 ### 插件清单
 
 - [BetterScan - V1.0.4](https://github.com/brbrss/BetterScan)
+- [CoverCollageMaker - V1.2](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [CustomSteamCovers - V3.0](https://github.com/uwx/PlayniteCustomSteamCovers)
 - [DolphinMetadata (GameTDB) - V3.1](https://github.com/uwx/PlayniteDolphinMetadata)
 - [FreeGameNotifications - V1.1.2](https://github.com/epidemicz/FreeGameNotifications)

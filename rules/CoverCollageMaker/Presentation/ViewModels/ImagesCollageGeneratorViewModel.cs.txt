@@ -1,0 +1,11 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./source/Generic/CoverCollageMaker/Presentation/ViewModels/ImagesCollageGeneratorViewModel.cs
+
+"Error while generating collage:"="生成封面墙时出错:"
+"Generating images collage..."="生成封面墙中..."
+$"File already exists at:\n{filePath}.\n\nDo you want to overwrite it?"=$"F文件已存在:\n{filePath}.\n\n是否覆盖?"
+"Saved image to="已保存封面墙至
+"An error occurred while saving collage: "="保存封面墙时出错: "
+"Image copied to clipboard.\n\nNote: Transparency is not preserved when copying images to the clipboard."="已保存封面墙至剪切板。\n\n注意：保存至剪切板时，不会遵循透明度设置。"
+$"An error occurred while copying the image to the clipboard:\n{e.Message}"=$"保存封面墙至剪切板时出错:\n{e.Message}"

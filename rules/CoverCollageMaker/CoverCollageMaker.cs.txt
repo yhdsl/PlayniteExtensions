@@ -1,0 +1,7 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./source/Generic/CoverCollageMaker/CoverCollageMaker.cs
+
+Create game covers collage...=生成所选游戏的封面墙...
+Covers Collage Maker=制作游戏封面墙
+Images Collage Generator=游戏封面墙生成器
