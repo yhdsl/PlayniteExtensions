@@ -1,0 +1,17 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./DLsiteMetadataSettingsView.xaml
+
+"Game category:"="游戏类别:"
+"Page Language:"="页面语言:"
+"Assign DLsite genres to:"="导入DLsite流派为:"
+"Assign Supported languages to:"="导入支持的语言至为:"
+"Include AI-generated works in search"="搜索时包含AI生成作品"
+"Include Illustrators as Developers"="将插画师视为开发者"
+"Include Scenario Writers as Developers"="将剧本作者视为开发者"
+"Include Music Creators as Developers"="将音乐作者视为开发者"
+"Include Voice Actors as Developers"="将声优视为开发者"
+"Include Product Format as Features"="将商品格式视为功能特色"
+"Include File Format as Features"="将文件格式视为功能特色"
+"Assign Game Product Format to Genres"="导入作品商品格式视为流派"
+"Max Search Results:"="最大搜索结果:"

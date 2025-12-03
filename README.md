@@ -8,6 +8,7 @@
 - [CoverCollageMaker - V1.2](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [CustomSteamCovers - V3.0](https://github.com/uwx/PlayniteCustomSteamCovers)
 - [DolphinMetadata (GameTDB) - V3.1](https://github.com/uwx/PlayniteDolphinMetadata)
+- [DLsiteMetadata - V1.16.1](https://github.com/Mysterken/DLsiteMetadata)
 - [FreeGameNotifications - V1.1.2](https://github.com/epidemicz/FreeGameNotifications)
 - [FriendlySetTime - V0.4](https://github.com/erys/FriendlySetTimePlaynitePlugin)
 - [GOGMetadata - V0.2.2](https://github.com/Jeshibu/PlayniteExtensions)

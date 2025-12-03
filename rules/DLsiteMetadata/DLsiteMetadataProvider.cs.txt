@@ -1,0 +1,7 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./DLsiteMetadataProvider.cs
+
+"Search DLsite"="在DLsite上搜索"
+"Product unavailable:="产品不可用:
+"Failed to fetch metadata from DLsite for {gameName ?? "the selected game"}",="无法从DLsite上获取 {gameName ?? "所选游戏"} 的元数据",
