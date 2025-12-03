@@ -1,0 +1,7 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./FriendlySetPlugin.cs
+@DELIMITER=|
+
+window.Height = 170;|//
+window.Width = 520;|window.SizeToContent = SizeToContent.WidthAndHeight;
