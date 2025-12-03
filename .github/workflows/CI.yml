@@ -706,7 +706,7 @@ jobs:
           python-version: '3.12'
 
       - name: Run translator tool
-        run: python .\tool\translator.py .\translate\rules\DLsiteMetadata -r "$(pwd)\source"
+        run: python .\tool\translator.py .\translate\rules\DLsiteMetadata -r "$(pwd)\source\source"
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v2
