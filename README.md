@@ -20,4 +20,4 @@
 - [Steam_Tags_Importer - V4.3.1](https://github.com/Jeshibu/PlayniteExtensions)
 - [Steam Wishlist Discount Notifier - v1.38](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [virtual-library - V0.01](https://github.com/iSplasher/PlayniteExtensions)
-- [XboxMetadata - V0.4.1](https://github.com/Jeshibu/PlayniteExtensions)
+- [XboxMetadata - V0.4.2](https://github.com/Jeshibu/PlayniteExtensions)
