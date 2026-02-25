@@ -4,3 +4,6 @@
 
 Use vertical covers=使用纵向封面
 Language=元数据语言
+Background image type priority:=背景图片类型优先级:
+Drag and drop to reorder. First in the list gets priority.=拖放以重新排序，最上方的图片类型优先级最高。
+
