@@ -10,32 +10,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout VirtualLibrary source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'iSplasher/PlayniteExtensions'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\virtual-library -r "$(pwd)\source\plugins"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\Plugins.sln
@@ -46,7 +46,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\Plugins.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: VirtualLibrary
           path: |
@@ -57,32 +57,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout FriendlySetTime source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'erys/FriendlySetTimePlaynitePlugin'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\FriendlySetTime -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\FriendlySetTime.sln
@@ -93,7 +93,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\FriendlySetTime.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: FriendlySetTime
           path: |
@@ -104,32 +104,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout CustomSteamCovers source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'uwx/PlayniteCustomSteamCovers'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\CustomSteamCovers -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\PlayniteCustomSteamCovers.sln
@@ -140,7 +140,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\PlayniteCustomSteamCovers.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: CustomSteamCovers
           path: |
@@ -151,32 +151,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout LaunchMate source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'ASchoe311/LaunchMate'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\LaunchMate -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\LaunchMate.sln
@@ -188,7 +188,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\LaunchMate.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: LaunchMate
           path: |
@@ -199,32 +199,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout DolphinMetadata source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'uwx/PlayniteDolphinMetadata'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\DolphinMetadata -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\PlayniteDolphinMetadata.sln
@@ -235,7 +235,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\PlayniteDolphinMetadata.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: DolphinMetadata
           path: |
@@ -246,26 +246,26 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout all Jeshibu PlayniteExtensions source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'Jeshibu/PlayniteExtensions'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: |
@@ -276,7 +276,7 @@ jobs:
           python .\tool\translator.py .\translate\rules\XboxMetadata -r "$(pwd)\source\source\XboxMetadata"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Setup dotnet to V10
         uses: actions/setup-dotnet@v5
@@ -313,28 +313,28 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\PlayniteExtensions.sln -p:Configuration=Release -restore
 
       - name : Upload artifact (GOGMetadata)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: GOGMetadata
           path: |
             .\source\source\GOGMetadata\bin\*
 
       - name : Upload artifact (Steam_Tags_Importer)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: Steam_Tags_Importer
           path: |
             .\source\source\SteamTagsImporter\bin\*
 
       - name : Upload artifact (PCGamingWikiMetadata)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: PCGamingWikiMetadata
           path: |
             .\source\source\PCGamingWikiMetadata\bin\*
 
       - name : Upload artifact (XboxMetadata)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: XboxMetadata
           path: |
@@ -345,32 +345,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout NintendoMetadata source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'minhnhattonthat/playnite-nintendo-metadata-plugin'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\NintendoMetadata -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\NintendoMetadata.sln
@@ -381,7 +381,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\NintendoMetadata.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: NintendoMetadata
           path: |
@@ -392,32 +392,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout BetterScan source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'brbrss/BetterScan'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\BetterScan -r "$(pwd)\source\BetterScan\src"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\BetterScan.sln
@@ -428,7 +428,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\BetterScan.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: BetterScan
           path: |
@@ -439,32 +439,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout FreeGameNotifications source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'epidemicz/FreeGameNotifications'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\FreeGameNotifications -r "$(pwd)\source\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\source\FreeGameNotifications.sln
@@ -475,7 +475,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\FreeGameNotifications.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: FreeGameNotifications
           path: |
@@ -486,32 +486,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout JsonLibraryImportExport source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'sokolinthesky/JsonLibraryImportExport'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\JsonLibraryImportExport -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: nuget restore .\source\JsonLibraryImportExport.sln
@@ -522,7 +522,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\JsonLibraryImportExport.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: JsonLibraryImportExport
           path: |
@@ -533,32 +533,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout ReviewViewer source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'darklinkpower/PlayniteExtensionsCollection'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\ReviewViewer -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: |
@@ -571,7 +571,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\Generic\ReviewViewer\ReviewViewer.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ReviewViewer
           path: |
@@ -582,32 +582,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout SteamWishlistDiscountNotifier source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'darklinkpower/PlayniteExtensionsCollection'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\SteamWishlistDiscountNotifier -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Move .sln
         run: |
@@ -624,7 +624,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\Generic\SteamWishlistDiscountNotifier\SteamWishlistDiscountNotifier.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: SteamWishlistDiscountNotifier
           path: |
@@ -635,32 +635,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout SteamWishlistDiscountNotifier source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'darklinkpower/PlayniteExtensionsCollection'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\CoverCollageMaker -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: |
@@ -673,7 +673,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\Generic\CoverCollageMaker\CoverCollageMaker.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: CoverCollageMaker
           path: |
@@ -684,32 +684,32 @@ jobs:
 
     steps:
       - name: Checkout translate file
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: './translate'
 
       - name: Checkout translator tool
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'yhdsl/Translator-Tool'
           path: './tool'
 
       - name: Checkout SteamWishlistDiscountNotifier source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'Mysterken/DLsiteMetadata'
           path: './source'
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.14'
 
       - name: Run translator tool
         run: python .\tool\translator.py .\translate\rules\DLsiteMetadata -r "$(pwd)\source\source"
 
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@v3
 
       - name: Nuget Restore
         run: |
@@ -721,7 +721,7 @@ jobs:
           .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\source\DLsiteMetadata.sln -p:Configuration=Release -restore
 
       - name : Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: DLsiteMetadata
           path: |
