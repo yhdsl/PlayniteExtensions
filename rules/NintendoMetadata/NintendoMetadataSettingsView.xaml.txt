@@ -4,3 +4,6 @@
 
 Default Nintendo Store Region=任天堂商店地区
 Prefer Playnite game region=首选当前 Playnite 设置的地区
+Cover Style=封面图样式
+Square=方形
+Wide=宽屏
