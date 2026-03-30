@@ -14,7 +14,7 @@
 - [GOGMetadata - V0.3](https://github.com/Jeshibu/PlayniteExtensions)
 - [JsonLibraryImportExport - V1.0.0](https://github.com/sokolinthesky/JsonLibraryImportExport)
 - [LaunchMate - V2.0.1](https://github.com/ASchoe311/LaunchMate)
-- [NintendoMetadata - V0.3.2](https://github.com/minhnhattonthat/playnite-nintendo-metadata-plugin)
+- [NintendoMetadata - V0.3.4](https://github.com/minhnhattonthat/playnite-nintendo-metadata-plugin)
 - [PCGamingWikiMetadata - V1.7](https://github.com/Jeshibu/PlayniteExtensions)
 - [Steam Reviews Viewer - V2.57](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [Steam_Tags_Importer - V4.4](https://github.com/Jeshibu/PlayniteExtensions)
