@@ -43,3 +43,4 @@
 "This reviewer received the game for free."="该评测人是免费获取此游戏的。"
 "This review was written while the game was marked as Steam Early Access"="该评测被撰写时，此游戏被标记为 Steam 抢先体验游戏"
 "Early Access Review"="抢先体验版本评测"
+"Reviewer's PC Specs:"="评测者的 PC 配置："
