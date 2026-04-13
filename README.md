@@ -16,7 +16,7 @@
 - [LaunchMate - V2.0.1](https://github.com/ASchoe311/LaunchMate)
 - [NintendoMetadata - V0.3.5](https://github.com/minhnhattonthat/playnite-nintendo-metadata-plugin)
 - [PCGamingWikiMetadata - V1.7](https://github.com/Jeshibu/PlayniteExtensions)
-- [Steam Reviews Viewer - V2.58](https://github.com/darklinkpower/PlayniteExtensionsCollection)
+- [Steam Reviews Viewer - V2.59](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [Steam_Tags_Importer - V4.4](https://github.com/Jeshibu/PlayniteExtensions)
 - [Steam Wishlist Discount Notifier - v1.39](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [virtual-library - V0.01](https://github.com/iSplasher/PlayniteExtensions)
