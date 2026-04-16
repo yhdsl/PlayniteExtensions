@@ -18,6 +18,6 @@
 - [PCGamingWikiMetadata - V1.7](https://github.com/Jeshibu/PlayniteExtensions)
 - [Steam Reviews Viewer - V2.59](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [Steam_Tags_Importer - V4.4](https://github.com/Jeshibu/PlayniteExtensions)
-- [Steam Wishlist Discount Notifier - v1.39](https://github.com/darklinkpower/PlayniteExtensionsCollection)
+- [Steam Wishlist Discount Notifier - v1.40](https://github.com/darklinkpower/PlayniteExtensionsCollection)
 - [virtual-library - V0.01](https://github.com/iSplasher/PlayniteExtensions)
 - [XboxMetadata - V0.5](https://github.com/Jeshibu/PlayniteExtensions)
