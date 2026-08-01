@@ -6,7 +6,7 @@ on:
 
 jobs:
   VirtualLibrary:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -53,7 +53,7 @@ jobs:
             .\source\plugins\virtual-library\bin\*
 
   FriendlySetTime:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -100,7 +100,7 @@ jobs:
             .\source\bin\*
 
   CustomSteamCovers:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -147,7 +147,7 @@ jobs:
             .\source\PlayniteCustomSteamCovers\bin\*
 
   LaunchMate:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -195,7 +195,7 @@ jobs:
             .\source\bin\*
 
   DolphinMetadata:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -242,7 +242,7 @@ jobs:
             .\source\PlayniteDolphinMetadata\bin\*
 
   JeshibuPlayniteExtensions:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -341,7 +341,7 @@ jobs:
             .\source\source\XboxMetadata\bin\*
 
   NintendoMetadata:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -388,7 +388,7 @@ jobs:
             .\source\bin\*
 
   BetterScan:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -435,7 +435,7 @@ jobs:
             .\source\BetterScan\bin\*
 
   FreeGameNotifications:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -482,7 +482,7 @@ jobs:
             .\source\source\bin\*
 
   JsonLibraryImportExport:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -529,7 +529,7 @@ jobs:
             .\source\bin\*
 
   ReviewViewer:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -578,7 +578,7 @@ jobs:
             .\source\source\Generic\ReviewViewer\bin\Release\*
 
   SteamWishlistDiscountNotifier:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -631,7 +631,7 @@ jobs:
             .\source\source\Generic\SteamWishlistDiscountNotifier\bin\Release\*
 
   CoverCollageMaker:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
@@ -680,7 +680,7 @@ jobs:
             .\source\source\Generic\CoverCollageMaker\bin\Release\*
 
   DLsiteMetadata:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Checkout translate file
