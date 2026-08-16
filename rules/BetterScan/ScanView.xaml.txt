@@ -9,3 +9,4 @@ Select Folder=选择文件夹
 "Scan Result"="扫描结果"
 "Icon"="图标"
 "File Path"="文件路径"
+"Select All"="全选"
