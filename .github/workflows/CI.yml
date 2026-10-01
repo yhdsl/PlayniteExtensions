@@ -754,7 +754,7 @@ jobs:
           python-version: '3.14'
 
       - name: Run translator tool
-        run: python .\tool\translator.py .\translate\rules\UniversalPSNMetadata -r "$(pwd)\source\source"
+        run: python .\tool\translator.py .\translate\rules\UniversalPSNMetadata -r "$(pwd)\source"
 
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v3
