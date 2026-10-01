@@ -1,6 +1,6 @@
 @AUTHOR=YHDSL
 @VERSION=1.0.0
-@TARGET=./source/UniversalPSNMetadataSettingsView.xaml
+@TARGET=./UniversalPSNMetadataSettingsView.xaml
 
 PlayStation Store region and language=PlayStation 商店地区与语言
 Used for Store searches, links, and localized metadata such as descriptions.=用于处理商店搜索、链接获取以及游戏描述等本地化数据。
