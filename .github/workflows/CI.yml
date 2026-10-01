@@ -726,3 +726,51 @@ jobs:
           name: DLsiteMetadata
           path: |
             .\source\source\bin\Release\*
+
+  playnite-metadata-psn-universal:
+    runs-on: windows-2022
+
+    steps:
+      - name: Checkout translate file
+        uses: actions/checkout@v6
+        with:
+          path: './translate'
+
+      - name: Checkout translator tool
+        uses: actions/checkout@v6
+        with:
+          repository: 'yhdsl/Translator-Tool'
+          path: './tool'
+
+      - name: Checkout UniversalPSNMetadata source code
+        uses: actions/checkout@v6
+        with:
+          repository: 'XenorPLxx/playnite-metadata-psn-universal'
+          path: './source'
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+
+      - name: Run translator tool
+        run: python .\tool\translator.py .\translate\rules\UniversalPSNMetadata -r "$(pwd)\source\source"
+
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v3
+
+      - name: Nuget Restore
+        run: |
+          nuget restore .\source\UniversalPSNMetadata.sln
+
+      - name: Build entire solution (with .NET Framework 4.6.2)
+        run: |
+          cd "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+          .\MSBuild.exe $Env:GITHUB_WORKSPACE\source\UniversalPSNMetadata.sln -p:Configuration=Release -restore
+
+      - name : Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: UniversalPSNMetadata.sln
+          path: |
+            .\source\bin\Release\*

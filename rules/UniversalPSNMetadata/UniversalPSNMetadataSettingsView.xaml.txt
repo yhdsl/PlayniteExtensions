@@ -1,0 +1,8 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./source/UniversalPSNMetadataSettingsView.xaml
+
+PlayStation Store region and language=PlayStation 商店地区与语言
+Used for Store searches, links, and localized metadata such as descriptions.=用于处理商店搜索、链接获取以及游戏描述等本地化数据。
+Store locale override (optional)=覆盖设置商店区域 (可选)
+Use a Store URL locale such as en-gb or zh-hant-tw. When set, it overrides the selection above.=请使用例如 en-gb 或 zh-hant-tw 这样的商店 URL 区域设置。一旦设置，将覆盖上面的选择项。
