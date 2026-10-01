@@ -771,6 +771,6 @@ jobs:
       - name : Upload artifact
         uses: actions/upload-artifact@v7
         with:
-          name: UniversalPSNMetadata.sln
+          name: UniversalPSNMetadata
           path: |
             .\source\bin\Release\*
